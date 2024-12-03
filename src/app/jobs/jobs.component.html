@@ -1,0 +1,16 @@
+<p>
+  Eric har {{ totalDuration }} års erfarenhet av
+  {{ name }}
+</p>
+
+<div *ngFor="let job of jobs">
+  <div>
+    <b>{{ job.place }}, {{ job.role }}</b>
+  </div>
+  <div>
+    {{ job.from | date : "YYYY-MM-dd" }}
+    -
+    {{ job.to | date : "YYYY-MM-dd" }}
+  </div>
+</div>
+<hr />
