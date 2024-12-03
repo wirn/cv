@@ -3,11 +3,10 @@ import { Job } from '../../models/app.models';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-jobs',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './jobs.component.html',
-  styleUrl: './jobs.component.scss',
+    selector: 'app-jobs',
+    imports: [CommonModule],
+    templateUrl: './jobs.component.html',
+    styleUrl: './jobs.component.scss'
 })
 export class JobsComponent {
   @Input() jobs: Job[] = [];
