@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { jobList } from '../models/data';
-import { CommonModule } from '@angular/common';
+
 import { JobsComponent } from './jobs/jobs.component';
 import { JobPlace, Tech } from '../models/app.models';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, JobsComponent],
+  imports: [JobsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

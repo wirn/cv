@@ -3,14 +3,16 @@
   {{ name }}
 </p>
 
-<div *ngFor="let job of jobs">
+@for (job of jobs; track job) {
+<div>
   <div>
     <b>{{ job.place }}, {{ job.role }}</b>
   </div>
   <div>
-    {{ job.from | date : "YYYY-MM-dd" }}
+    {{ job.from | date : "yyyy-MM-dd" }}
     -
-    {{ job.to | date : "YYYY-MM-dd" }}
+    {{ job.to | date : "yyyy-MM-dd" }}
   </div>
 </div>
+}
 <hr />
