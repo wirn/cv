@@ -8,6 +8,7 @@ export interface Job {
 }
 
 export enum JobPlace {
+  Chessit = 'Chessit',
   SEB = 'SEB',
   SvenskaGolf = 'Svenska golfförbundet',
   Arbetsformedlingen = 'Arbetsförmedlingen',

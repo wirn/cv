@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { jobList } from '../models/data';
 import { CommonModule } from '@angular/common';
 import { JobsComponent } from './jobs/jobs.component';
 import { JobPlace, Tech } from '../models/app.models';
 
 @Component({
-    selector: 'app-root',
-    imports: [RouterOutlet, CommonModule, JobsComponent],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+  selector: 'app-root',
+  imports: [CommonModule, JobsComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   allJobs = jobList;
@@ -39,5 +38,18 @@ export class AppComponent {
       j.place !== JobPlace.Forex &&
       j.place !== JobPlace.Ineko &&
       j.place !== JobPlace.Adlibris
+  );
+
+  typescript = jobList.filter((j) => j.techniques.includes(Tech.Angular));
+
+  git = jobList.filter(
+    (j) =>
+      j.place !== JobPlace.Forex &&
+      j.place !== JobPlace.Ineko &&
+      j.place !== JobPlace.Adlibris
+  );
+
+  rest = jobList.filter(
+    (j) => j.place !== JobPlace.Forex && j.place !== JobPlace.Ineko
   );
 }

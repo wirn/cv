@@ -2,13 +2,28 @@ import { Job, JobPlace, Tech } from './app.models';
 
 export const jobList: Job[] = [
   {
-    place: JobPlace.SEB,
-    from: new Date('2022-04-01T00:00:00Z'),
+    place: JobPlace.Chessit,
+    from: new Date('2025-03-01'),
     to: null,
+    location: 'Danderyd',
+    role: 'Front end-utvecklare',
+    techniques: [
+      Tech.Angular,
+      Tech.TypeScript,
+      Tech.SASS,
+      Tech['.NET'],
+      Tech.Scrum,
+    ],
+  },
+  {
+    place: JobPlace.SEB,
+    from: new Date('2023-04-04'),
+    to: new Date('2024-12-31'),
     location: 'Solna',
     role: 'Front end-utvecklare',
     techniques: [
       Tech.Angular,
+      Tech.TypeScript,
       Tech.SQL,
       Tech.SASS,
       Tech['.NET'],
@@ -18,20 +33,21 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.SvenskaGolf,
-    from: new Date('2022-01-01T00:00:00Z'),
-    to: new Date('2022-04-01T00:00:00Z'),
+    from: new Date('2022-01-01'),
+    to: new Date('2022-04-01'),
     location: 'Stockholm',
     role: 'Front end-utvecklare',
     techniques: [Tech.Vue, Tech.Vuex, Tech.SASS, Tech.JSON],
   },
   {
     place: JobPlace.Arbetsformedlingen,
-    from: new Date('2019-12-01T00:00:00Z'),
-    to: new Date('2021-08-01T00:00:00Z'),
+    from: new Date('2019-12-01'),
+    to: new Date('2021-08-01'),
     location: 'Stockholm',
     role: 'Frontendutvecklare',
     techniques: [
       Tech.Angular,
+      Tech.TypeScript,
       Tech['.NET'],
       Tech.Java,
       Tech.CSS,
@@ -45,8 +61,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.BrandFactory,
-    from: new Date('2019-04-01T00:00:00Z'),
-    to: new Date('2019-11-01T00:00:00Z'),
+    from: new Date('2019-04-01'),
+    to: new Date('2019-11-01'),
     location: 'Stockholm',
     role: 'Front end-utvecklare',
     techniques: [
@@ -60,12 +76,13 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Riksarkivet,
-    from: new Date('2018-10-01T00:00:00Z'),
-    to: new Date('2019-03-01T00:00:00Z'),
+    from: new Date('2018-10-01'),
+    to: new Date('2019-03-01'),
     location: 'Stockholm',
     role: 'Angular-utvecklare',
     techniques: [
       Tech.Angular,
+      Tech.TypeScript,
       Tech.ASPNETMVC,
       Tech.SQL,
       Tech.RxJs,
@@ -75,8 +92,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Aspia,
-    from: new Date('2018-04-01T00:00:00Z'),
-    to: new Date('2018-10-01T00:00:00Z'),
+    from: new Date('2018-04-01'),
+    to: new Date('2018-10-01'),
     location: 'Stockholm',
     role: 'Front end-utvecklare',
     techniques: [
@@ -90,8 +107,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Interflora,
-    from: new Date('2017-04-01T00:00:00Z'),
-    to: new Date('2018-04-01T00:00:00Z'),
+    from: new Date('2017-04-01'),
+    to: new Date('2018-04-01'),
     location: 'Stockholm',
     role: 'Front end-utvecklare',
     techniques: [
@@ -104,8 +121,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.SoderbergPartners,
-    from: new Date('2017-01-01T00:00:00Z'),
-    to: new Date('2017-04-01T00:00:00Z'),
+    from: new Date('2017-01-01'),
+    to: new Date('2017-04-01'),
     location: 'Stockholm',
     role: 'Front end-utvecklare',
     techniques: [
@@ -119,8 +136,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.ICA,
-    from: new Date('2016-09-01T00:00:00Z'),
-    to: new Date('2016-12-01T00:00:00Z'),
+    from: new Date('2016-09-01'),
+    to: new Date('2016-12-01'),
     location: 'Sundbyberg',
     role: 'Front end-utvecklare',
     techniques: [
@@ -135,8 +152,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Sats,
-    from: new Date('2015-06-01T00:00:00Z'),
-    to: new Date('2016-02-01T00:00:00Z'),
+    from: new Date('2015-06-01'),
+    to: new Date('2016-02-01'),
     location: 'Stockholm',
     role: 'Webbutvecklare',
     techniques: [
@@ -150,8 +167,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Printpool,
-    from: new Date('2015-02-01T00:00:00Z'),
-    to: new Date('2015-06-01T00:00:00Z'),
+    from: new Date('2015-02-01'),
+    to: new Date('2015-06-01'),
     location: 'Stockholm',
     role: 'Webbutvecklare',
     techniques: [
@@ -165,8 +182,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.SverigesKommunikatorer,
-    from: new Date('2014-10-01T00:00:00Z'),
-    to: new Date('2015-01-01T00:00:00Z'),
+    from: new Date('2014-10-01'),
+    to: new Date('2015-01-01'),
     location: 'Stockholm',
     role: 'Webbutvecklare',
     techniques: [
@@ -182,8 +199,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Sats,
-    from: new Date('2014-05-01T00:00:00Z'),
-    to: new Date('2014-08-01T00:00:00Z'),
+    from: new Date('2014-05-01'),
+    to: new Date('2014-08-01'),
     location: 'Stockholm',
     role: 'Webbutvecklare',
     techniques: [
@@ -198,8 +215,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Sats,
-    from: new Date('2014-04-01T00:00:00Z'),
-    to: new Date('2014-06-01T00:00:00Z'),
+    from: new Date('2014-04-01'),
+    to: new Date('2014-06-01'),
     location: 'Stockholm',
     role: 'Webbutvecklare',
     techniques: [
@@ -213,8 +230,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Forex,
-    from: new Date('2013-02-01T00:00:00Z'),
-    to: new Date('2014-03-01T00:00:00Z'),
+    from: new Date('2013-02-01'),
+    to: new Date('2014-03-01'),
     location: 'Stockholm',
     role: 'Webbutvecklare',
     techniques: [
@@ -228,8 +245,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Ineko,
-    from: new Date('2012-09-01T00:00:00Z'),
-    to: new Date('2013-01-01T00:00:00Z'),
+    from: new Date('2012-01-07'),
+    to: new Date('2013-01-01'),
     location: 'Stockholm',
     role: 'Webbutvecklare',
     techniques: [
@@ -243,8 +260,8 @@ export const jobList: Job[] = [
   },
   {
     place: JobPlace.Adlibris,
-    from: new Date('2009-10-01T00:00:00Z'),
-    to: new Date('2012-09-01T00:00:00Z'),
+    from: new Date('2009-10-01'),
+    to: new Date('2012-09-01'),
     location: 'Stockholm',
     role: 'Webbutvecklare',
     techniques: [
